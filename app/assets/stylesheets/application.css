@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+footer{
+  position: absolute;/*←絶対位置*/
+  bottom: 0; /*下に固定*/
+}

@@ -13,8 +13,9 @@ class BooksController < ApplicationController
 
   def create
     @book = Book.new(book_params)
+    @book.user_id = current_user.id
     @book.save
-    # logger.debug("投稿成功")
+    logger.debug("投稿成功")
     redirect_to books_path
   end
 

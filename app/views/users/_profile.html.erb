@@ -1,5 +1,7 @@
 <table class='table'>
-  <tr><%= image_tag user.get_profile_image(200,200) %></tr>
+  <tr>
+    <div class="mb-2"><%= image_tag user.get_profile_image(200,200) %></div>
+  </tr>
   <tr>
 	  <th>name</th>
 	  <th><%= user.name %></th>

@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     @user.update(user_params)
-    logger.debug("編集成功")
+    # logger.debug("編集成功")
     redirect_to user_path(@user)
   end
 

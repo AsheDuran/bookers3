@@ -15,8 +15,12 @@ class BooksController < ApplicationController
     @book = Book.new(book_params)
     @book.user_id = current_user.id
     @book.save
-    logger.debug("投稿成功")
+    # logger.debug("投稿成功")
     redirect_to books_path
+  end
+
+  def edit
+    @book = Book.find(params[:id])
   end
 
   private

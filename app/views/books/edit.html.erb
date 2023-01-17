@@ -1,2 +1,8 @@
-<h1>Books#edit</h1>
-<p>Find me in app/views/books/edit.html.erb</p>
+<div class='container'>
+  <div class='row'>
+    <h1>Editing Book</h1>
+    <%= render 'form', book: @book %>
+    <%= link_to 'Show', @book %> |
+  	<%= link_to 'Back', books_path, class: "back" %>
+  </div>
+</div>

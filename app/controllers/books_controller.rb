@@ -16,7 +16,7 @@ class BooksController < ApplicationController
     @book.user_id = current_user.id
     if @book.save
     # logger.debug("投稿成功")
-      redirect_to books_path, notice: "本の投稿に成功しました!"
+      redirect_to books_path(@book), notice: "本の投稿に成功しました!"
     else  @books = Book.all
       @user = current_user
       render 'index'

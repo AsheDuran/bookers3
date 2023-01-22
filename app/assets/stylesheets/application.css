@@ -19,11 +19,11 @@
   box-sizing: border-box;
  }
 
-footer{
+footer {
   height:70px;
 }
 
-.footer_text{
+.footer_text {
   color:#ffffff
 }
 
@@ -36,3 +36,4 @@ body {
 main {
   flex: 1;
 }
+

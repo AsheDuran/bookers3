@@ -1,6 +1,6 @@
 <% if book.favorited_by?(current_user) %>
   <%= link_to book_favorites_path(book), method: :delete do %>
-    <i class="fas fa-heart" aria-hidden="true" style="color: red;"></i>
+    <i class="fas fa-heart" aria-hidden="true" style="color: #ff0000;"></i>
     <%= book.favorites.count %>
   <% end %>
 <% else %>

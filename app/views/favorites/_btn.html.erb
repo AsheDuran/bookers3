@@ -6,6 +6,6 @@
 <% else %>
   <%= link_to book_favorites_path(book), method: :post do %>
     <i class="fas fa-heart" aria-hidden="true"></i>
-    <%= book.favorites.count %> いいね
+    <%= book.favorites.count %>
   <% end %>
 <% end %>

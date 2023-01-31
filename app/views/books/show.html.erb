@@ -9,6 +9,15 @@
     <div class='col-md-8 offset-md-1 mt-3'>
       <h2>Book detail</h2>
   		<table class='table'>
+  		  <thead>
+          <tr>
+            <th>User</th>
+            <th>Title</th>
+            <th>Opinion</th>
+            <th>favorites</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
   		  <tr>
           <td><%= link_to(@book.user) do %>
             <%= image_tag @book.user.get_profile_image(100,100) %><br>

@@ -12,6 +12,21 @@
         <div class="row">
           <%= link_to 'Sign Up',new_user_registration_path, class: "btn btn-success btn-sm btn-block sign_up" %>
         </div>
+
+        <div class="row">
+          <button id="button3" onmouseover="mouseOver1()" onmouseout="mouseOut1()">ここにマウスを当ててみてください</button>
+          <script>
+            let button3 = document.getElementById("button3")
+
+            function mouseOver() {
+              button3.innerHTML = "マウスが当たりました！"
+            }
+
+            function mouseOut() {
+              button3.innerHTML = "ここにマウスを当ててみてください"
+            }
+          </script>
+        </div>
       </div>
     </div>
   </div>

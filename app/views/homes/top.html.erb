@@ -14,17 +14,13 @@
         </div>
 
         <div class="row">
-          <button id="button3" onmouseover="mouseOver1()" onmouseout="mouseOut1()">ここにマウスを当ててみてください</button>
+          <button id="button3" onmouseover="mouseOver1()">ここにマウスを当ててみてください</button>
           <script>
-            let button3 = document.getElementById("button3")
-
-            function mouseOver() {
-              button3.innerHTML = "マウスが当たりました！"
-            }
-
-            function mouseOut() {
-              button3.innerHTML = "ここにマウスを当ててみてください"
-            }
+           $(function(){
+              $('#button3').mouseover(function(){
+                $('#button3').css({'background-color': '#0000FF'});
+              });
+            });
           </script>
         </div>
       </div>

@@ -2,4 +2,18 @@
   <div class='row'>
     <h1 class="px-3 mx-auto">Welcome to <i class="fas fa-book"></i><strong>Bookers</strong>!</h1>
   </div>
+
+  <div class="row">
+    <button id="button3" onmouseover="mouseOver1()">カーソルを当ててね！</button>
+    <script>
+     $(function(){
+        $('#button3').mouseover(function(){
+          $('#button3').css({'background-color': '#0000FF'});
+        });
+        $('#button3').mouseout(function(){
+          $('#button3').css({'background-color': '#FF0000'});
+        });
+      });
+    </script>
+  </div>
 </div>
